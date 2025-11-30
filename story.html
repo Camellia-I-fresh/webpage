@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小马宝莉剧情主线</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- 配置Tailwind自定义主题 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pony: {
+                            pink: '#FFE6EA',
+                            purple: '#D8BFD8',
+                            blue: '#B0E2FF',
+                            yellow: '#FFFACD',
+                            orange: '#FFDAB9',
+                            pinkDark: '#FFB6C1'
+                        }
+                    },
+                    fontFamily: {
+                        pony: ['Comic Sans MS', 'Marker Felt', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .bg-blur {
+                backdrop-filter: blur(8px);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+<body class="font-pony text-gray-800 min-h-screen">
+    <!-- 背景图 -->
+    <div class="fixed inset-0 z-0">
+        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/f3de55a45d1f40079a04220866a3e54d.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=20251130160558DD8BF92FFBA472FF99EF&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765094758&x-signature=9dHn1msCCO71l2w63FF5ApXY4gY%3D" 
+             alt="小马宝莉背景" 
+             class="w-full h-full object-cover opacity-30">
+    </div>
+
+    <!-- 页面容器 -->
+    <div class="relative z-10 container mx-auto px-4 py-12 max-w-4xl">
+        <!-- 标题部分 -->
+        <header class="text-center mb-12">
+            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-pony-pinkDark mb-4 text-shadow">
+                <i class="fa fa-star mr-3 animate-pulse"></i>小马宝莉主线剧情<i class="fa fa-star ml-3 animate-pulse"></i>
+            </h1>
+            <div class="w-32 h-1 bg-gradient-to-r from-pony-purple to-pony-blue mx-auto rounded-full"></div>
+        </header>
+
+        <!-- 内容卡片 -->
+        <div class="space-y-10">
+            <!-- 第一阶段 -->
+            <div class="bg-white/80 bg-blur rounded-2xl p-6 shadow-lg card-hover border-l-8 border-pony-purple">
+                <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-pony-purple mb-4">
+                    <i class="fa fa-shield mr-2"></i>第一阶段：元素的守护者（第1-3季）
+                </h2>
+                <ul class="space-y-3 pl-6">
+                    <li class="flex items-start">
+                        <span class="text-pony-purple font-bold mr-2">·</span>
+                        <div>
+                            <span class="font-bold">开端：</span>学霸独角兽紫悦被导师宇宙公主派往小马谷学习友谊。她与五位小马结成好友，并重新发现了代表“和谐之源”的六大元素（诚实、善良、欢笑、慷慨、忠诚、魔法），击败了梦魇之月等反派。
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-pony-purple font-bold mr-2">·</span>
+                        <div>
+                            <span class="font-bold">核心：</span>她们六位作为友谊元素的化身，成为小马利亚的守护者，一次次用友谊的力量化解危机。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 第二阶段 -->
+            <div class="bg-white/80 bg-blur rounded-2xl p-6 shadow-lg card-hover border-l-8 border-pony-blue">
+                <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-pony-blue mb-4">
+                    <i class="fa fa-crown mr-2"></i>第二阶段：公主的成长（第4-6季）
+                </h2>
+                <ul class="space-y-3 pl-6">
+                    <li class="flex items-start">
+                        <span class="text-pony-blue font-bold mr-2">·</span>
+                        <div>
+                            <span class="font-bold">升华：</span>紫悦对友谊魔法的理解日益深刻，她完成了将所有魔法连接起来的终极咒语，进化成了天角兽。
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-pony-blue font-bold mr-2">·</span>
+                        <div>
+                            <span class="font-bold">加冕：</span>因其在友谊魔法上的卓越贡献，紫悦被加冕为小马利亚的第四位公主，标志着友谊成为与日月星辰同等重要的国家支柱。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 第三阶段 -->
+            <div class="bg-white/80 bg-blur rounded-2xl p-6 shadow-lg card-hover border-l-8 border-pony-yellow">
+                <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-amber-500 mb-4">
+                    <i class="fa fa-book mr-2"></i>第三阶段：导师与传承（第7-9季）
+                </h2>
+                <ul class="space-y-3 pl-6">
+                    <li class="flex items-start">
+                        <span class="text-amber-500 font-bold mr-2">·</span>
+                        <div>
+                            <span class="font-bold">拓展：</span>紫悦从学生转变为导师，她建立了“友谊学校”，向小马利亚乃至其他种族的生物传授友谊之道。
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-amber-500 font-bold mr-2">·</span>
+                        <div>
+                            <span class="font-bold">终极挑战：</span>面对最终的威胁——一心要抹除所有魔法的邪茧女王联盟，紫悦领悟到友谊的真谛在于分享与传承。
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-amber-500 font-bold mr-2">·</span>
+                        <div>
+                            <span class="font-bold">结局：</span>紫悦继承了宇宙公主的职责，成为友谊帝国的统治者。她和朋友们确保了友谊的智慧将代代相传，故事圆满落幕。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 总结 -->
+            <div class="bg-white/90 bg-blur rounded-2xl p-6 shadow-lg card-hover border-t-4 border-pony-pinkDark">
+                <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-pony-pinkDark mb-4 text-center">
+                    <i class="fa fa-heart mr-2"></i>剧情主线总结<i class="fa fa-heart ml-2"></i>
+                </h2>
+                <p class="text-center text-lg italic">
+                    这就是一个从<span class="font-bold text-pony-purple">“学习友谊”</span>到<span class="font-bold text-pony-blue">“守护友谊”</span>，
+                    再到<span class="font-bold text-amber-500">“成为公主”</span>，最终<span class="font-bold text-pony-pinkDark">“传承友谊”</span>的完整成长史诗。
+                </p>
+                <p><a href="index.html">return</a></p>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="mt-16 text-center text-gray-600 text-sm">
+            <p>© 2025 1130 小马宝莉剧情解析 | 与友谊永存</p>
+        </footer>
+    </div>
+
+    <!-- 简单动画效果 -->
+    <script>
+        // 页面加载时的渐入效果
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 + index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
