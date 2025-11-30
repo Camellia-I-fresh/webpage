@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小马宝莉的温情与意义</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- 自定义Tailwind配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pony: {
+                            pink: '#FFE1F0',
+                            purple: '#D4B2E8',
+                            blue: '#BDE0FE',
+                            yellow: '#FFF2CC',
+                            orange: '#FFD6A5'
+                        }
+                    },
+                    fontFamily: {
+                        pony: ['"Comic Sans MS"', '"Marker Felt"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            }
+            .bg-blur {
+                backdrop-filter: blur(8px);
+            }
+            .content-card {
+                @apply bg-white/90 bg-blur rounded-2xl p-6 md:p-8 shadow-lg border-l-4 transition-all duration-300 hover:shadow-xl;
+            }
+        }
+    </style>
+</head>
+<body class="font-pony min-h-screen">
+    <!-- 背景图 -->
+    <div class="fixed inset-0 z-0">
+        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/6642316930fa413cab900474177a0831.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=20251130163453D58D24B7D1254A8FD9D3&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765096494&x-signature=ELaE7EFWhQtJxfuXUTu%2F%2FcTeyRY%3D" 
+             alt="小马宝莉角色背景" 
+             class="w-full h-full object-cover opacity-25">
+    </div>
+
+    <!-- 页面容器 -->
+    <div class="relative z-10 container mx-auto px-4 py-12 max-w-4xl">
+        <!-- 标题区 -->
+        <header class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-pony-purple">
+                <i class="fa fa-heart text-pony-pink mr-2"></i>小马宝莉的温情与意义
+            </h1>
+            <div class="w-40 h-1 bg-gradient-to-r from-pony-pink to-pony-purple mx-auto rounded-full"></div>
+        </header>
+
+        <!-- 内容区 -->
+        <div class="space-y-8">
+            <!-- 第一段 -->
+            <div class="content-card border-pony-pink">
+                <p class="text-gray-800 leading-relaxed">
+                    《小马宝莉》所构建的，远不止一个童话般的乌托邦。小马谷的“温情”，是其最核心的魔法，它并非不谙世事的单纯，而是一种在深知生活有阴影后，依然选择面向光明的、积极的实践。这份温情体现在每一次不计回报的援手，每一次对怪癖的包容，以及每一次争吵后更为坚固的和解。它告诉我们，真正的强大不是孤身征服世界，而是敢于承认需要他人，并在彼此的联结中发现一个更广阔的宇宙。
+                </p>
+            </div>
+
+            <!-- 第二段 -->
+            <div class="content-card border-pony-purple">
+                <p class="text-gray-800 leading-relaxed">
+                    这部作品最深刻的意义在于，它用最绚烂的包装，将“友谊”这一常被世俗视为软弱的情感，升华为一种可供学习、实践、并足以撼动现实世界的哲学体系。它解构了传统公主等待救赎的叙事，塑造了一群通过自我成长与团队协作来实现价值的女性角色。她们向我们宣告：诚实、善良、欢笑、慷慨、忠诚，这些最朴素的品质，并非过时的教条，而是对抗虚无、偏见与冷漠的终极力量。最终，它不仅仅是在讲述小马的故事，而是在我们每个人心中种下一颗信念：只要我们愿意像小马谷的居民一样，去理解，去倾听，去伸出蹄子，我们也能在自己的世界里，创造出同样动人的温情与奇迹。
+                </p>
+            </div>
+
+            <!-- 第三段 -->
+            <div class="content-card border-pony-blue">
+                <p class="text-gray-800 leading-relaxed">
+                    《小马宝莉》的温情，其深刻之处在于它直面了“不完美”与“差异性”。小马谷并非一个没有冲突的净土，而是一个允许试错、并在错误中学习的实践场。紫悦的过度理性、云宝的骄傲、珍奇的虚荣、苹果嘉儿的固执……这些性格中的“缺陷”从未被真正抹去，而是在友谊的框架下被理解、引导，最终成为了她们独特的魅力与力量源泉。
+                </p>
+            </div>
+
+            <!-- 第四段 -->
+            <div class="content-card border-pony-yellow">
+                <p class="text-gray-800 leading-relaxed">
+                    这部动画的意义，也因此超越了“歌颂友谊”的表层，升华为一场关于个体与共同体如何健康共生的寓言。它回答了这样一个问题：我们如何在保有最独特自我的同时，又能与他人构建最深切的联结？小马谷的答案是：不是通过消除差异来实现统一，而是通过欣赏差异来创造和谐。碧琪的派对、柔柔的动物庇护所、珍奇的时装，这些独特的“自我表达”恰恰成为了滋养整个社区的养分。
+                </p>
+            </div>
+
+            <!-- 第五段 -->
+            <div class="content-card border-pony-orange">
+                <p class="text-gray-800 leading-relaxed">
+                    最终，它传递了一个充满力量的信念：温柔、共情与善意，并非天真，而是一种需要巨大勇气和智慧来实践的强大生活方式。它鼓励每一个观众，无论年龄，都去相信——你所拥有的那份善良，就是改变世界的最初的、也是最伟大的魔法。
+                </p>
+            </div>
+            <p><a href="index.html">return</a></p>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="mt-12 text-center text-gray-600 text-sm">
+            <p>© 2025 1130 小马宝莉 | 友谊是最伟大的魔法</p>
+        </footer>
+    </div>
+
+    <!-- 加载动画 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.content-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateX(-20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateX(0)';
+                }, 200 + index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
