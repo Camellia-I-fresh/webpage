@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Pony Characters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- 配置Tailwind自定义颜色 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pony: {
+                            purple: '#9b6ef3',
+                            pink: '#f975a0',
+                            yellow: '#f9e96e',
+                            blue: '#6ed2f9',
+                            orange: '#f9a86e',
+                            white: '#f2f2f9',
+                            green: '#6ef9a8'
+                        }
+                    },
+                    fontFamily: {
+                        pony: ['Comic Sans MS', 'Comic Sans', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .character-card {
+                @apply relative overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+            }
+            .character-image {
+                @apply w-full h-64 md:h-80 object-cover transition-transform duration-500 hover:scale-110;
+            }
+            .character-name {
+                @apply absolute bottom-0 left-0 right-0 bg-black/60 text-white text-center py-3 font-pony text-lg md:text-xl font-bold;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-blue-100 min-h-screen">
+    <header class="py-8 px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-pony font-bold text-transparent bg-clip-text bg-gradient-to-r from-pony-purple via-pony-pink to-pony-blue">
+            My Little Pony
+        </h1>
+        <p class="mt-2 text-gray-600 font-pony">Friendship is Magic</p>
+    </header>
+    
+    <main class="container mx-auto px-4 pb-16">
+        <!-- 角色网格布局 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+            <!-- Twilight Sparkle -->
+            <div class="character-card">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/f0e95bf3e8e84d0fabe3be6a76c54afc.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025113015251207B0A48AE9313741C66E&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765092312&x-signature=Ey2WA25Z3WaV2M6W8BH4j2lwa%2BM%3D" 
+                     alt="Twilight Sparkle" class="character-image">
+                <div class="character-name">Twilight Sparkle(magic)</div>
+            </div>
+            
+            <!-- Pinkie Pie -->
+            <div class="character-card">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/19431b0aad374c32b23ead504afbdd2f.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025113015251207B0A48AE9313741C66E&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765092312&x-signature=OHoNuP1XaKlyLdthnNT2u7GcKQM%3D" 
+                     alt="Pinkie Pie" class="character-image">
+                <div class="character-name">Pinkie Pie(optimism)</div>
+            </div>
+            
+            <!-- Fluttershy -->
+            <div class="character-card">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b271f41dad7747cf8359cacbb8ea00c5.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301535306890C799D779A7EB6F93&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765092930&x-signature=JyNVubvewqx6hmVhDBgViA5J74g%3D" 
+                     alt="Fluttershy" class="character-image">
+                <div class="character-name">Fluttershy(goodness)</div>
+            </div>
+            
+            <!-- Rainbow Dash -->
+            <div class="character-card">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/ff68146761d842929d91e429d0bee6b5.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301535306890C799D779A7EB6F93&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765092930&x-signature=TpDG72U%2BSsbQYBT3JWxZdbeM61k%3D" 
+                     alt="Rainbow Dash" class="character-image">
+                <div class="character-name">Rainbowdash(loyalty)</div>
+            </div>
+            
+            <!-- Applejack -->
+            <div class="character-card">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/0eb9815110f74a058714640a7a15c5e6.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301535306890C799D779A7EB6F93&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765092930&x-signature=DbHcr%2FLNlEDFOsCNc4qB9oCqaww%3D" 
+                     alt="Applejack" class="character-image">
+                <div class="character-name">Applejack(integrity)</div>
+            </div>
+            
+            <!-- Rarity -->
+            <div class="character-card">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/3b8f3cfd6a864f33b8e9619683bd73d3.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301535306890C799D779A7EB6F93&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765092930&x-signature=8LGz1Y3kjDJYID2BcpWbmazSInk%3D" 
+                     alt="Rarity" class="character-image">
+                <div class="character-name">Rarity(generosity)</div>
+            </div>
+            
+            <!-- Spike -->
+            <div class="character-card">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/a29ebb253d1245e0b11fb0f825acc4f4.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025113015251207B0A48AE9313741C66E&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765092312&x-signature=EfHXH%2FjVNyxoUodvCkLXLXh1%2BlQ%3D" 
+                     alt="Spike" class="character-image">
+                <div class="character-name">Spike(loveliness)</div>
+            </div>
+            <p><a href="index.html">return</a></p>
+        </div>
+    </main>
+    
+    <footer class="bg-gradient-to-r from-pony-purple/80 to-pony-blue/80 text-white py-6 px-4 text-center">
+        <p class="font-pony">© 2025 1130 My Little Pony Characters</p>
+        <p class="text-sm mt-1">Friendship is Magic</p>
+    </footer>
+    
+    <script>
+        // 添加图片加载动画效果
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.character-image');
+            
+            images.forEach(img => {
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.5s ease-in-out';
+                
+                img.onload = () => {
+                    img.style.opacity = '1';
+                };
+                
+                // 如果图片已经缓存，手动触发加载事件
+                if (img.complete) {
+                    img.onload();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
