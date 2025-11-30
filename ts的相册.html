@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小马谷的温情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- 配置Tailwind自定义颜色 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pony: {
+                            light: '#F3E5F5',
+                            DEFAULT: '#CE93D8',
+                            dark: '#BA68C8'
+                        }
+                    },
+                    fontFamily: {
+                        pony: ['Comic Sans MS', 'Bubblegum Sans', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .image-card {
+                @apply rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 cursor-pointer;
+            }
+            .text-shadow {
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            }
+            .bg-pattern {
+                background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            }
+        }
+    </style>
+</head>
+<body class="bg-pony-light bg-pattern min-h-screen">
+    <!-- 页面头部 -->
+    <header class="py-8 px-4 text-center">
+        <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-pony font-bold text-pony-dark text-shadow">
+           </i>Twilight Sparkle的相册
+        </h1>
+    </header>
+    
+    <!-- 主要内容区 -->
+    <main class="max-w-7xl mx-auto px-4 pb-16">
+        <!-- 文字描述区 -->
+        <div class="mb-12 bg-white/70 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-md">
+            <p class="text-[clamp(1.1rem,2vw,1.3rem)] text-gray-700 leading-relaxed font-pony">
+                小马谷的温情，是傍晚时分从屋里透出的灯火，是朋友间一个不言而喻的眼神，是“我懂你”的默契，是“有我在”的担当。它告诉我们，最强大的魔法，就蕴藏在这些看似普通却无比真挚的联结之中。
+            </p>
+        </div>
+        
+        <!-- 图片展示区 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 图片1 -->
+            <div class="image-card group">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/80877742580744eb9115ecfb2ebecb7d.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301613596A8EE79673B8324FC083&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765095239&x-signature=g8%2BH%2BepR4ESz2nkpnxyCN5L0TAQ%3D" 
+                     alt="小马宝莉角色特写" 
+                     class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="p-4 bg-white/80">
+                    <span class="font-bold text-pony-purple">个性鲜明的朋友们</h3>
+                    <p class="text-sm text-gray-600">每个小马都有独特的性格和天赋</p>
+                </div>
+            </div>
+            
+            <!-- 图片2 -->
+            <div class="image-card group">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/4f221029eb804eaabaadaace8ed8dce2.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301613596A8EE79673B8324FC083&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765095239&x-signature=zVlEfDQ3q1gB0M9eT2%2BaVivETXE%3D" 
+                     alt="小马宝莉角色展示" 
+                     class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="p-4 bg-white/80">
+                    <span class="font-bold text-pony-purple">闪耀的友谊之光</h3>
+                    <p class="text-sm text-gray-600">友谊是最珍贵的宝藏</p>
+                </div>
+            </div>
+            
+            <!-- 图片3 -->
+            <div class="image-card group">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/1fd588284f644539904e3e41130389f3.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301613596A8EE79673B8324FC083&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765095239&x-signature=BZHtDiMGNKsOgB715XeKMk9gJNE%3D" 
+                     alt="小马宝莉全体角色" 
+                     class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="p-4 bg-white/80">
+                    <span class="font-bold text-pony-purple">小马谷的大家庭</h3>
+                    <p class="text-sm text-gray-600">小马谷的每一位居民，都是这片温暖土地的缩影。独一无二，无法替代</p>
+                </div>
+            </div>
+            
+            <!-- 图片4 -->
+            <div class="image-card group">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/764f962f56d34076925f6a92ac645ca1.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301613596A8EE79673B8324FC083&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765095239&x-signature=MkacUwkrgt4DAS4rC%2Fi%2FmijvgcQ%3D" 
+                     alt="小马们的欢乐时光" 
+                     class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="p-4 bg-white/80">
+                    <span class="font-bold text-pony-purple">欢乐的共同回忆</h3>
+                    <p class="text-sm text-gray-600">一起度过的美好时光</p>
+                </div>
+            </div>
+            
+            <!-- 图片5 -->
+            <div class="image-card group md:col-span-2 lg:col-span-1">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/285ac26d6b134493be5784058839d77c.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=202511301613596A8EE79673B8324FC083&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1765095239&x-signature=El88g%2FyW0RY320EdbJ07NUCBzXg%3D" 
+                     alt="小马们的情感时刻" 
+                     class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="p-4 bg-white/80">
+                    <span class="font-bold text-pony-purple">心灵相通的瞬间</h3>
+                    <p class="text-sm text-gray-600">彼此支持，共同面对困难</p>
+                </div>
+            </div>
+            <p><a href="index.html">return</a></p>
+        </div>
+    </main>
+    
+    <!-- 页脚 -->
+    <footer class="bg-pony/20 py-6 text-center">
+        <p class="text-gray-600 font-pony">
+            <i class="fa fa-magic text-purple-500 mr-2"></i>friendship magic never fades
+        </p>
+        <p class="text-gray-500 text-sm mt-2">© 2025 小马谷友谊纪念馆</p>
+    </footer>
+    
+    <!-- 图片查看器模态框 -->
+    <div id="imageViewer" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+        <button id="closeViewer" class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300">
+            <i class="fa fa-times"></i>
+        </button>
+        <img id="viewerImage" src="" alt="大图查看" class="max-h-[90vh] max-w-full">
+    </div>
+    
+    <script>
+        // 图片查看器功能
+        const imageViewer = document.getElementById('imageViewer');
+        const viewerImage = document.getElementById('viewerImage');
+        const closeViewer = document.getElementById('closeViewer');
+        const imageCards = document.querySelectorAll('.image-card img');
+        
+        // 打开图片查看器
+        imageCards.forEach(img => {
+            img.addEventListener('click', () => {
+                viewerImage.src = img.src;
+                imageViewer.classList.remove('hidden');
+                imageViewer.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // 关闭图片查看器
+        closeViewer.addEventListener('click', () => {
+            imageViewer.classList.add('hidden');
+            imageViewer.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // 点击外部关闭
+        imageViewer.addEventListener('click', (e) => {
+            if (e.target === imageViewer) {
+                closeViewer.click();
+            }
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
